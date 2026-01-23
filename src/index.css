@@ -66,3 +66,34 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;              /* full width */
+  height: 60px;             /* give it a fixed height */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;      /* vertically center items */
+  background-color: #282c34;
+  padding: 0 2rem;          /* horizontal padding only */
+  border-bottom: 2px solid #444;
+  z-index: 1000;
+  box-sizing: border-box;   /* ensures padding doesn’t add extra height */
+  color: #ffffff;
+}
+
+.nav-left {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.nav-link {
+  color: #ffffff;
+}
