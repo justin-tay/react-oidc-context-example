@@ -81,7 +81,9 @@ function App() {
     );
   }
 
-  return <button onClick={() => void auth.signinRedirect()}>Log in</button>;
+  return <button onClick={() => 
+    void auth.signinRedirect()
+  }>Log in</button>;
 }
 
 export default App;

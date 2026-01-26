@@ -5,6 +5,10 @@ import App from './App.tsx'
 import { AuthProvider, type AuthProviderProps } from "react-oidc-context";
 import { BrowserRouter } from "react-router-dom";
 
+import { Log } from 'oidc-client-ts';
+Log.setLogger(console);
+Log.setLevel(Log.DEBUG);
+
 const issuer = "http://localhost:8080/realms/test";
 
 const oidcConfig: AuthProviderProps = {
